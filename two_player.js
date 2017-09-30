@@ -4,6 +4,15 @@ $( document ).ready(function() {
          window.location.href = "main.html";
    });
 
+   $("#start_button").click(function(){
+       gameStart();
+   });
+
+   $("#reset").click(function(){
+         location.reload(false);
+  });
+
+
    function checkWin(){
        var a = $("#btn1").html();
        var b = $("#btn2").html();
@@ -56,6 +65,7 @@ $( document ).ready(function() {
            	$("#btn1").html("O");
            	$("#btn1").removeClass("hidden_color");
             $("#btn1").addClass("black_letter");
+            document.getElementById("btn1").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -67,12 +77,14 @@ $( document ).ready(function() {
               $("#btn2").html("X");
               $("#btn2").removeClass("hidden_color");
               $("#btn2").addClass("black_letter");
+              document.getElementById("btn2").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn2").html("O");
            	$("#btn2").removeClass("hidden_color");
             $("#btn2").addClass("black_letter");
+            document.getElementById("btn2").disabled = true;
            	  turn += 1;
            };
         checkWin();
@@ -83,6 +95,7 @@ $( document ).ready(function() {
                $("#btn3").html("X");
                $("#btn3").removeClass("hidden_color");
               $("#btn3").addClass("black_letter");
+              document.getElementById("btn3").disabled = true;
                turn += 1 ;
               console.log(turn);
               
@@ -90,6 +103,7 @@ $( document ).ready(function() {
            	$("#btn3").html("O");
            	$("#btn3").removeClass("hidden_color");
             $("#btn3").addClass("black_letter");
+            document.getElementById("btn3").disabled = true;
            	  turn += 1;
            };
         checkWin();
@@ -100,12 +114,14 @@ $( document ).ready(function() {
                $("#btn4").html("X");
                $("#btn4").removeClass("hidden_color");
               $("#btn4").addClass("black_letter");
+              document.getElementById("btn4").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn4").html("O");
            	$("#btn4").removeClass("hidden_color");
             $("#btn4").addClass("black_letter");
+            document.getElementById("btn4").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -116,12 +132,14 @@ $( document ).ready(function() {
                $("#btn5").html("X");
                $("#btn5").removeClass("hidden_color");
               $("#btn5").addClass("black_letter");
+              document.getElementById("btn5").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn5").html("O");
            	$("#btn5").removeClass("hidden_color");
               $("#btn5").addClass("black_letter");
+              document.getElementById("btn5").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -133,12 +151,14 @@ $( document ).ready(function() {
                $("#btn6").html("X");
                $("#btn6").removeClass("hidden_color");
               $("#btn6").addClass("black_letter");
+              document.getElementById("btn6").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn6").html("O");
            	$("#btn6").removeClass("hidden_color");
             $("#btn6").addClass("black_letter");
+            document.getElementById("btn6").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -150,12 +170,14 @@ $( document ).ready(function() {
                $("#btn7").html("X");
                $("#btn7").removeClass("hidden_color");
                $("#btn7").addClass("black_letter");
+               document.getElementById("btn7").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn7").html("O");
            	$("#btn7").removeClass("hidden_color");
             $("#btn7").addClass("black_letter");
+            document.getElementById("btn7").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -166,12 +188,14 @@ $( document ).ready(function() {
                $("#btn8").html("X");
                $("#btn8").removeClass("hidden_color");
                $("#btn8").addClass("black_letter");
+               document.getElementById("btn8").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn8").html("O");
            	$("#btn8").removeClass("hidden_color");
             $("#btn8").addClass("black_letter");
+            document.getElementById("btn8").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -182,12 +206,14 @@ $( document ).ready(function() {
                $("#btn9").html("X");
                $("#btn9").removeClass("hidden_color");
                $("#btn9").addClass("black_letter");
+               document.getElementById("btn9").disabled = true;
                turn += 1 ;
               console.log(turn);
            }else{
            	$("#btn9").html("O");
            	$("#btn9").removeClass("hidden_color");
             $("#btn9").addClass("black_letter");
+            document.getElementById("btn9").disabled = true;
            	  turn += 1;
            };
            checkWin();
@@ -195,7 +221,7 @@ $( document ).ready(function() {
 
 
 }
- gameStart();
+
 
    
 
